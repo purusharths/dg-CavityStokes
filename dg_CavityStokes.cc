@@ -48,7 +48,7 @@ const int GHOST_LAYER_WIDTH = 2;
 #undef USE_P4EST
 #endif
 
-static const char *PARAM_FILENAME = "ex11_StokesConvergence.xml";
+static const char *PARAM_FILENAME = "dg_CavityStokes.xml";
 #ifndef MESHES_DATADIR
 #define MESHES_DATADIR "./"
 #endif
@@ -707,7 +707,7 @@ void ConvergenceStokes::visualize()
   
   // write out data
   std::stringstream name;
-  name << "ex11_solution" << refinement_level_;
+  name << "dg_CavityStokes_solution" << refinement_level_;
   
   VTKWriter< DataType, DIM> vtk_writer (visu, this->comm_, MASTER_RANK);
   vtk_writer.write(name.str());    

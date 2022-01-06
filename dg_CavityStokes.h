@@ -183,7 +183,7 @@ struct VelocityDirichletBC
   // vel_x_ (vel_x)
   VelocityDirichletBC()
   {
-    exact_sol_.set_fe_ind(0);
+    // exact_sol_.set_fe_ind(0);
   }
 
   void evaluate(const mesh::Entity &face,
@@ -867,8 +867,8 @@ public:
   Entity facet_;
 
   DataType nu_;
-    DataType g_;
-  DataType f_;
+    DataType g_ = 0;
+  DataType f_ = -1;
 
   ExactSol exact_sol_;
   DataType gamma_p_;
