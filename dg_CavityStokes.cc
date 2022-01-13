@@ -13,7 +13,7 @@
 // v1.2 along with HiFlow3.  If not, see
 // <https://joinup.ec.europa.eu/page/eupl-text-11-12>.
 
-/// \author Philipp Gerstner
+/// \author Purusharth Saxena
 
 #include "dg_CavityStokes.h"
 
